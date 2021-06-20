@@ -87,7 +87,7 @@ nav>ul>li>a:hover{
 #search>button{
     height: auto;
     width: auto;
-    margin: 5.5pc;
+    margin: 1.5pc;
     border: solid 0px transparent;
     border-radius: 2pc;
     padding: 1.5pc;
@@ -167,7 +167,7 @@ footer>div{
   /* Style the submit button */
     .search button {
     float: left;
-    width: 20%;
+    /* width: 20%; */
     padding: 10px;
     background: #9bee3bd3;
     color: white;
@@ -193,3 +193,14 @@ footer>div{
     display: table;
   }
   
+  /* button{
+  
+  
+    color: #fff;
+    background-color: #a6ed57;
+  }
+
+  button:hover{
+     
+      background-color: #315804d3;
+  } */
