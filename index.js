@@ -11,7 +11,17 @@ const api = `https://api.weatherbit.io/v2.0/forecast/airquality?
 postal_code=${postal_code}&key=2a7f171c37a743ab850a6a0708d049d8`;
 
 fetch(api)
-  .then((response) => response.json())
+  .then((response) => {
+    if (response.status >= 200 && response.status <= 299) 
+    {
+      
+      return response.json();
+    } 
+    else 
+    {
+      throw Error(response.statusText);
+    }
+  })
   .then((result) => {
   	
   	 
@@ -96,10 +106,12 @@ fetch(api)
   </div>`
  ;
     document.getElementById("data_").innerHTML = tab;
-	})	 
-  	 
+	})
+  
 
-});
+}).catch( (error)=>{
+  alert(error);
+})
 
 }
 
