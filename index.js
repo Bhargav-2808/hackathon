@@ -109,10 +109,7 @@ fetch(api)
 	})
   
 
-}).catch( (error)=>{
-  alert(error);
 })
-
 }
 
 
